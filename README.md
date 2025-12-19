@@ -12,4 +12,4 @@ Want to learn more about LLMs? Not only how to use them programmatically in R (o
 - Part 2: [Talking to LLMs: From Prompt to Response](https://shiny.rstudio.com/blog/shiny-side-of-llms-part-2)
 - Part 3: [Biuld Your First LLM App with Shiny for Python or R](https://shiny.rstudio.com/blog/shiny-side-of-llms-part-3)
 
-In this series you'll build a full blown app called "DeckCheck", that analyses your Quarto slides and improves them using LLMs.
+In this series you'll build a full blown app called "DeckCheck", that analyses your Quarto slides and improves them using LLMs. 
