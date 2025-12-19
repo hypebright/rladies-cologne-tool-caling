@@ -4,3 +4,7 @@ project:
   output-dir: docs
 execute:
   freeze: auto
+render:
+  # Only render index.qmd
+  files:
+    - index.qmd
