@@ -1,259 +1,259 @@
 [
   {
-    "objectID": "rladies-cologne-tool-calling.html#what-are-llms",
-    "href": "rladies-cologne-tool-calling.html#what-are-llms",
+    "objectID": "index.html#what-are-llms",
+    "href": "index.html#what-are-llms",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "What are LLMs?",
     "text": "What are LLMs?\n\nLLM = Large Language Model\nTrained on huge amounts of text data\nDesigned to predict and generate human-like language\n\n\nAll powered by a model that recognises patterns at scale."
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#how-do-llms-work",
-    "href": "rladies-cologne-tool-calling.html#how-do-llms-work",
+    "objectID": "index.html#how-do-llms-work",
+    "href": "index.html#how-do-llms-work",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "How do LLMs work?",
     "text": "How do LLMs work?\nThe answer is quite boring: statistics."
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#the-magic-of-scale",
-    "href": "rladies-cologne-tool-calling.html#the-magic-of-scale",
+    "objectID": "index.html#the-magic-of-scale",
+    "href": "index.html#the-magic-of-scale",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "The magic of scale",
     "text": "The magic of scale\nAnd something cool happens when you train a model on massive datasets with billions of words: LLMs start to show emergent abilities, aka skills the model wasn’t directly trained for, yet still manages to do.\n\nAn LLM was trained to predict the next word in a sentence, but at scale it can also:\n\nWrite code\nTranslate languages\nDo fun things like writing poetry or jokes"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#what-are-llms-good-at",
-    "href": "rladies-cologne-tool-calling.html#what-are-llms-good-at",
+    "objectID": "index.html#what-are-llms-good-at",
+    "href": "index.html#what-are-llms-good-at",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "What are LLMs good at?",
     "text": "What are LLMs good at?\nLLMs are great at:\n\nGenerating human-like text\nProviding conversational responses\nSummarising text\nAnswering questions based on provided context\nWriting and debugging code snippets"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#what-are-llms-bad-at",
-    "href": "rladies-cologne-tool-calling.html#what-are-llms-bad-at",
+    "objectID": "index.html#what-are-llms-bad-at",
+    "href": "index.html#what-are-llms-bad-at",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "What are LLMs bad at?",
     "text": "What are LLMs bad at?\nIt isn’t all rainbows and unicorns though.\n\nLLMs can be confidently wrong. They can “hallucinate” information, making up facts or details that aren’t true:\n\nCounting\nPerforming calculations\nProviding real-time or up-to-date information"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#why-do-llms-hallucinate",
-    "href": "rladies-cologne-tool-calling.html#why-do-llms-hallucinate",
+    "objectID": "index.html#why-do-llms-hallucinate",
+    "href": "index.html#why-do-llms-hallucinate",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Why do LLMs hallucinate?",
     "text": "Why do LLMs hallucinate?\nLLMs generate text based on patterns in the data they were trained on.\n\nThey don’t have a true understanding of the world or access to real-time information.\n\nSo, when asked a question outside their training data, they might produce plausible-sounding but incorrect answers."
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#llms-dont-execute-code",
-    "href": "rladies-cologne-tool-calling.html#llms-dont-execute-code",
+    "objectID": "index.html#llms-dont-execute-code",
+    "href": "index.html#llms-dont-execute-code",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "LLMs don’t execute code",
     "text": "LLMs don’t execute code\nLLMs can generate code snippets, but they don’t actually run or test the code.\n\nIf we ask an LLM to write a function, it might produce code that looks correct but isn’t.\nIf we ask an LLM to perform calculations, it might give us the wrong answer because it’s generating text based on patterns rather than executing mathematical operations.\nIf we ask for real-time data, like the current weather, it can’t provide accurate information because it doesn’t have access to live data."
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#but-we-know-how-to-be-accurate",
-    "href": "rladies-cologne-tool-calling.html#but-we-know-how-to-be-accurate",
+    "objectID": "index.html#but-we-know-how-to-be-accurate",
+    "href": "index.html#but-we-know-how-to-be-accurate",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "But we know how to be accurate",
     "text": "But we know how to be accurate\nWhat if we could combine the strengths of LLMs with tools that provide accurate information? Real functions that get executed?\n\nHello, tool calling!"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#what-is-tool-calling",
-    "href": "rladies-cologne-tool-calling.html#what-is-tool-calling",
+    "objectID": "index.html#what-is-tool-calling",
+    "href": "index.html#what-is-tool-calling",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "What is tool calling?",
     "text": "What is tool calling?\nTool calling is a technique where an LLM can invoke external tools or functions to perform specific tasks.\n\nFor example: a tool that fetches real-time weather data. When the LLM is asked about the weather, it can call this tool to get accurate information instead of guessing.\n\nOr, we can create a tool that performs calculations. When the LLM is asked a math question, it can call this tool to get the correct answer."
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#benefits-of-tool-calling",
-    "href": "rladies-cologne-tool-calling.html#benefits-of-tool-calling",
+    "objectID": "index.html#benefits-of-tool-calling",
+    "href": "index.html#benefits-of-tool-calling",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Benefits of tool calling",
     "text": "Benefits of tool calling\n\nAccuracy: tools provide reliable and up-to-date information\nSpecialisation: tools can be designed for specific tasks\nEfficiency: LLMs can focus on generating text while tools handle other stuff\nReduced hallucination: by relying on tools for factual information, the chances of LLMs making things up decrease"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#how",
-    "href": "rladies-cologne-tool-calling.html#how",
+    "objectID": "index.html#how",
+    "href": "index.html#how",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "How?",
     "text": "How?\nWith ellmer 💜\n\n\n\nCutest hex logo ever"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#what-do-you-need",
-    "href": "rladies-cologne-tool-calling.html#what-do-you-need",
+    "objectID": "index.html#what-do-you-need",
+    "href": "index.html#what-do-you-need",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "What do you need?",
     "text": "What do you need?\nIn R, environment variables are typically stored in a .Renviron file. You can create this file in your project root or in your home directory (~/.Renviron). Or, use usethis::edit_r_environ().\n# .Renviron\nANTHROPIC_API_KEY=\"your_anthropic_api_key_here\"\n\nInstall ellmer from CRAN:\ninstall.packages(\"ellmer\")"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#your-first-conversation",
-    "href": "rladies-cologne-tool-calling.html#your-first-conversation",
+    "objectID": "index.html#your-first-conversation",
+    "href": "index.html#your-first-conversation",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Your first conversation",
     "text": "Your first conversation\nlibrary(ellmer)\n\nchat &lt;- chat(\"claude/claude-sonnet-4-5\")\n\nchat$chat(\n  \"Can you tell me some fun things to do with an 11 month old baby?\"\n)"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#your-first-conversation-1",
-    "href": "rladies-cologne-tool-calling.html#your-first-conversation-1",
+    "objectID": "index.html#your-first-conversation-1",
+    "href": "index.html#your-first-conversation-1",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Your first conversation",
     "text": "Your first conversation\nlibrary(ellmer)\n\nchat &lt;- chat(\"claude/claude-sonnet-4-5\")\n\nchat$chat(\n  \"Can you tell me some fun things to do with an 11 month old baby?\"\n)\n\n# Sure! Here are some fun activities you can do with your 11-month-old baby:\n1. **Peek-a-Boo**: This classic game never gets old! Hide your face behind your hands or a cloth and then reveal it with a big smile. Your baby will love the surprise!\n2. **Sensory Play**: Create a sensory bin with safe items like soft fabrics, plastic spoons, and colorful balls. Let your baby explore different textures and shapes.\n3. **Music and Dance**: Play some upbeat music and dance around with your baby. Sing simple songs and encourage your baby to clap or move to the rhythm.\n4. **Stacking Blocks**: Provide your baby with soft blocks or stacking cups. Show them how to stack and knock them down. This helps with hand-eye coordination.\n5. **Reading Time**: Choose colorful board books with simple pictures and read to your baby. Point to the images and make sounds to keep them engaged.\n6. **Outdoor Exploration**: Take your baby for a walk in a stroller or carrier. Point out different sights, sounds, and smells in nature.\n7. **Water Play**: Fill a shallow basin with water and let your baby splash around with cups and toys. Always supervise closely during water play."
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#about-the-chat-object",
-    "href": "rladies-cologne-tool-calling.html#about-the-chat-object",
+    "objectID": "index.html#about-the-chat-object",
+    "href": "index.html#about-the-chat-object",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "About the chat object",
     "text": "About the chat object\n\nIt’s stateful: it keeps track of the conversation history.\nYou give it a \"provider/model\" string when you create it, e.g. \"claude/claude-sonnet-4-5\".\nYou can also give it a system prompt to set the behaviour of the LLM.\nOptionally you can pass it params to tweak model settings (we won’t get into that today)."
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#system-prompt-vs-user-prompt",
-    "href": "rladies-cologne-tool-calling.html#system-prompt-vs-user-prompt",
+    "objectID": "index.html#system-prompt-vs-user-prompt",
+    "href": "index.html#system-prompt-vs-user-prompt",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "System prompt vs user prompt",
     "text": "System prompt vs user prompt\n\nThe system prompt is where you set the ground rules: it tells the model who it is, how it should behave, and what the answer should look like. It’s stable context.\nThe user prompt is the specific request you make right now, like asking a question or giving a command. It’s dynamic context."
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#baby-system-prompt",
-    "href": "rladies-cologne-tool-calling.html#baby-system-prompt",
+    "objectID": "index.html#baby-system-prompt",
+    "href": "index.html#baby-system-prompt",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Baby system prompt",
     "text": "Baby system prompt\nbaby-activities-system-prompt-simple.md:\nYou are an assistant that helps parents by generating a list of 10 baby \nactivities appropriate for an 11 month old baby. Each activity must \ninclude a 'fun score', estimated duration in minutes, and a short description.\n\nprompt_file &lt;- \"baby-activities-system-prompt-simple.md\"\n\nchat &lt;- chat(\"claude/claude-sonnet-4-5\", system_prompt = readLines(prompt_file))\n\nchat$chat(\n  \"What can I do with my baby today?\"\n)"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#baby-system-prompt-1",
-    "href": "rladies-cologne-tool-calling.html#baby-system-prompt-1",
+    "objectID": "index.html#baby-system-prompt-1",
+    "href": "index.html#baby-system-prompt-1",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Baby system prompt",
     "text": "Baby system prompt\nbaby-activities-system-prompt-simple.md:\nYou are an assistant that helps parents by generating a list of 10 baby \nactivities appropriate for an 11 month old baby. Each activity must \ninclude a 'fun score', estimated duration in minutes, and a short description.\n\nprompt_file &lt;- \"baby-activities-system-prompt-simple.md\"\n\nchat &lt;- chat(\"claude/claude-sonnet-4-5\", system_prompt = readLines(prompt_file))\n\nchat$chat(\n  \"What can I do with my baby today?\"\n)\n\n# 10 Fun Activities for Your 11-Month-Old Baby\n\n## 1. **Stacking & Knocking Down Blocks**\n- **Fun Score:** 9/10\n- **Duration:** 15-20 minutes\n- **Description:** Build towers with soft blocks and let your baby knock them down. This helps develop hand-eye coordination and introduces \ncause-and-effect concepts while providing endless giggles.\n\n## 2. **Musical Instrument Exploration**\n- **Fun Score:** 10/10\n- **Duration:** 10-15 minutes\n- **Description:** Give your baby child-safe shakers, drums, or a xylophone. Let them bang, shake, and explore different sounds. This stimulates \nauditory development and rhythm awareness.\n\n## 3. **Texture Treasure Basket**\n- **Fun Score:** 8/10\n- **Duration:** 15-20 minutes\n- **Description:** Fill a basket with safe items of different textures (wooden spoon, soft cloth, rubber ball, crinkly paper). Supervised \nexploration helps develop sensory awareness and curiosity.\n\n## 4. **Mirror Play & Silly Faces**\n- **Fun Score:** 9/10\n- **Duration:** 10 minutes\n- **Description:** Sit with your baby in front of a mirror making funny faces, waving, and pointing. This encourages self-recognition and \nsocial-emotional development.\n\n## 5. **Ball Rolling Game**\n- **Fun Score:** 8/10\n- **Duration:** 10-15 minutes\n- **Description:** Sit across from your baby and roll a soft ball back and forth. This builds motor skills, teaches turn-taking, and encourages \ncrawling or cruising.\n\n## 6. **Pop-Up Surprise Toys**\n- **Fun Score:** 9/10\n- **Duration:** 10 minutes\n- **Description:** Use pop-up toys or play peek-a-boo with stuffed animals. This reinforces object permanence and creates delightful anticipation.\n\n## 7. **Water Play in High Chair**\n- **Fun Score:** 10/10\n- **Duration:** 15-20 minutes\n- **Description:** Place your baby in their high chair with a shallow tray of water, cups, and floating toys. Splashing and pouring develops fine \nmotor skills (towels recommended!).\n\n## 8. **Crawling Obstacle Course**\n- **Fun Score:** 9/10\n- **Duration:** 15-20 minutes\n- **Description:** Create a safe path with pillows, tunnels (or chair legs), and toys to reach. This promotes gross motor development and \nproblem-solving skills.\n\n## 9. **Board Book Reading Time**\n- **Fun Score:** 7/10\n- **Duration:** 10-15 minutes\n- **Description:** Read colorful board books with simple words and textures. Let your baby turn pages and point at pictures to build language \nskills and a love of reading.\n\n## 10. **Dance Party**\n- **Fun Score:** 10/10\n- **Duration:** 10-15 minutes\n- **Description:** Play upbeat music and dance while holding your baby or let them bounce along. This is great for bonding, mood-boosting, and \ndeveloping rhythm and movement.\n\n---\n\n**Tip:** Watch for tired cues and rotate activities to keep your baby engaged without overstimulation. Have a wonderful day with your little one! \n🎉"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#dynamic-baby-age",
-    "href": "rladies-cologne-tool-calling.html#dynamic-baby-age",
+    "objectID": "index.html#dynamic-baby-age",
+    "href": "index.html#dynamic-baby-age",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Dynamic baby age",
     "text": "Dynamic baby age\nWhat if we want to make the baby age dynamic, so we can use the same prompt for different ages?\nYou are an assistant that helps parents by generating a list of 10 baby\nactivities appropriate for a {{ age }} month old baby. Each activity must\ninclude a 'fun score', estimated duration in minutes, and a short description.\n\nage &lt;- 11\nprompt_file &lt;- \"baby-activities-system-prompt-simple.md\"\n\nsystem_prompt &lt;- interpolate_file(\n  prompt_file,\n  age = age\n)\n\nchat &lt;- chat(\"claude/claude-sonnet-4-5\", system_prompt = system_prompt)\n\nchat$chat(\n  \"What can I do with my baby today?\"\n)"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#some-tips",
-    "href": "rladies-cologne-tool-calling.html#some-tips",
+    "objectID": "index.html#some-tips",
+    "href": "index.html#some-tips",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Some tips",
     "text": "Some tips\n\nPrompt design is a real thing: the way you phrase your system and user prompts matters.\nProvide enough context for the LLM to understand what you want. The more specific, the better (generally).\nBe specific in your system prompt about the format you want the answer in.\nFormat your prompts (e.g. markdown) to make it more readable (for you and the LLM).\nMake sure all that work doesn’t get lost: store your prompt in a separate file under version control."
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#back-to-the-output-format",
-    "href": "rladies-cologne-tool-calling.html#back-to-the-output-format",
+    "objectID": "index.html#back-to-the-output-format",
+    "href": "index.html#back-to-the-output-format",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Back to the output format",
     "text": "Back to the output format\nWe asked the LLM to provide a list of activities with specific fields: fun score, duration, description.\n\nWe could even make it more specific by stating we want JSON, YAML, or a Markdown table."
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#it-works-until-it-doesnt",
-    "href": "rladies-cologne-tool-calling.html#it-works-until-it-doesnt",
+    "objectID": "index.html#it-works-until-it-doesnt",
+    "href": "index.html#it-works-until-it-doesnt",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "It works… until it doesn’t",
     "text": "It works… until it doesn’t\nThis works, but is not always reliable. The LLM might forget to include a field, or format it incorrectly (e.g. wrap output in a code block, missing comma etc). The more complex the structure, the more likely it is to mess up. The solution?\n\nStructured output!"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#structured-output",
-    "href": "rladies-cologne-tool-calling.html#structured-output",
+    "objectID": "index.html#structured-output",
+    "href": "index.html#structured-output",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Structured output",
     "text": "Structured output\nStructured output refers to LLMs that support structured schemas as part of the API call and not just as instructions in the prompt.\n\nThese tell the model not just what to output, but how to constrain the generation itself.\n\nThe model generates a structure directly (like a JSON object or typed dictionary), and the output is guaranteed to match that structure."
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#requirements-for-structured-output",
-    "href": "rladies-cologne-tool-calling.html#requirements-for-structured-output",
+    "objectID": "index.html#requirements-for-structured-output",
+    "href": "index.html#requirements-for-structured-output",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Requirements for structured output",
     "text": "Requirements for structured output\nTo return structured output, we need to change two things:\n\nUse chat_structured\nProvide a type specification"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#specification",
-    "href": "rladies-cologne-tool-calling.html#specification",
+    "objectID": "index.html#specification",
+    "href": "index.html#specification",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Specification",
     "text": "Specification\nDescribe the structure of the output you want:\ndata_model &lt;- type_object(\n  baby_age_months = type_integer(\n    description = \"The age of the baby in months.\"\n  ),\n  activities = type_array(\n    description = \"List of 10 suggested activities for the baby based on the weather and age.\",\n    type_object(\n      name = type_string(description = \"Short title for the activity.\"),\n      fun_score = type_integer(\n        description = \"Score from 1–10 indicating how fun the activity is likely to be.\"\n      ),\n      duration_minutes = type_integer(\n        description = \"Estimated activity length in minutes.\"\n      ),\n      description = type_string(\n        description = \"One-sentence description of the activity.\"\n      )\n    )\n  )\n)"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#structured-chat",
-    "href": "rladies-cologne-tool-calling.html#structured-chat",
+    "objectID": "index.html#structured-chat",
+    "href": "index.html#structured-chat",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Structured chat",
     "text": "Structured chat\nage &lt;- 11\nprompt_file &lt;- \"baby-activities-system-prompt-simple.md\"\n\nsystem_prompt &lt;- interpolate_file(\n  prompt_file,\n  age = age\n)\n\nchat &lt;- chat(\"claude/claude-sonnet-4-5\", system_prompt = system_prompt)\n\nchat$chat_structured(\n  \"What can I do with my baby today?\",\n  type = data_model\n)"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#structured-chat-1",
-    "href": "rladies-cologne-tool-calling.html#structured-chat-1",
+    "objectID": "index.html#structured-chat-1",
+    "href": "index.html#structured-chat-1",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Structured chat",
     "text": "Structured chat\nage &lt;- 11\nprompt_file &lt;- \"baby-activities-system-prompt-simple.md\"\n\nsystem_prompt &lt;- interpolate_file(\n  prompt_file,\n  age = age\n)\n\nchat &lt;- chat(\"claude/claude-sonnet-4-5\", system_prompt = system_prompt)\n\nchat$chat_structured(\n  \"What can I do with my baby today?\",\n  type = data_model\n)\n\n$baby_age_months\n[1] 11\n\n$activities\n# A tibble: 10 × 4\n   name                       fun_score duration_minutes description                                                                               \n   &lt;chr&gt;                          &lt;int&gt;            &lt;int&gt; &lt;chr&gt;                                                                                     \n 1 Sensory Bin Exploration            9               20 Fill a shallow container with dry pasta or cereal and let baby explore textures with thei…\n 2 Musical Instrument Play           10               15 Give baby safe instruments like shakers, drums, or wooden spoons with pots to explore sou…\n 3 Cruising Practice                  8               25 Encourage baby to walk along furniture by placing favorite toys just out of reach to buil…\n 4 Water Play in Sink                 9               15 Let baby splash and pour water with cups and containers at the kitchen sink for sensory f…\n 5 Stacking and Knocking Down         8               20 Build towers with soft blocks or cups and let baby knock them down to develop hand-eye co…\n 6 Outdoor Nature Walk                7               30 Take a stroller walk and point out trees, birds, and flowers to stimulate baby's senses a…\n 7 Picture Book Reading               7               15 Read colorful board books with simple words and let baby turn pages and point at pictures.\n 8 Ball Rolling Game                  8               20 Sit on the floor and roll soft balls back and forth to encourage social play and motor sk…\n 9 Mirror Play                        9               15 Let baby make faces and interact with their reflection in a safe floor mirror for self-re…\n10 Bubble Chasing                    10               15 Blow bubbles for baby to watch, reach for, and pop to develop visual tracking and motor s…"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#next-up-tool-calling",
-    "href": "rladies-cologne-tool-calling.html#next-up-tool-calling",
+    "objectID": "index.html#next-up-tool-calling",
+    "href": "index.html#next-up-tool-calling",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Next up: tool calling!",
     "text": "Next up: tool calling!\nOk nice, but not tool calling yet.\n\nLet’s say we want to suggest more specific activities, like going to the park, but only if the weather is nice. Or going to see the Eifel tower, but only if you’re in Paris.\n\nWe need to tell the model in which city we are, and what the current weather is."
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#getting-real-time-data",
-    "href": "rladies-cologne-tool-calling.html#getting-real-time-data",
+    "objectID": "index.html#getting-real-time-data",
+    "href": "index.html#getting-real-time-data",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Getting real-time data",
     "text": "Getting real-time data\nRemember, LLMs can’t access real-time data on their own. We need to create tools to fetch this information for us. In ellmer, we can define functions that the LLM can call. For example:\n#' Get the current weather for a given city using Open-Meteo API\n#'\n#' @param city The name of the city\n#' @return A tibble with city, temperature in Celsius, windspeed, and weather code\nget_current_weather &lt;- function(city) {\n  # Geocoding API to get latitude/longitude from city name\n  geo_resp &lt;- request(\"https://geocoding-api.open-meteo.com/v1/search\") %&gt;%\n    req_url_query(name = city, count = 1) %&gt;%\n    req_perform() %&gt;%\n    resp_body_json()\n\n  if (is.null(geo_resp$results)) {\n    stop(\"City not found: \", city)\n  }\n\n  lat &lt;- geo_resp$results[[1]]$latitude\n  lon &lt;- geo_resp$results[[1]]$longitude\n\n  # Weather API for current weather at that location\n  weather_resp &lt;- request(\"https://api.open-meteo.com/v1/forecast\") %&gt;%\n    req_url_query(latitude = lat, longitude = lon, current_weather = \"true\") %&gt;%\n    req_perform() %&gt;%\n    resp_body_json()\n\n  current &lt;- weather_resp$current_weather\n\n  return(\n    tibble(\n      city = city,\n      temperature_c = current$temperature,\n      windspeed = current$windspeed,\n      weather_code = current$weathercode\n    )\n  )\n}"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#from-function-to-tool",
-    "href": "rladies-cologne-tool-calling.html#from-function-to-tool",
+    "objectID": "index.html#from-function-to-tool",
+    "href": "index.html#from-function-to-tool",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "From function to tool",
     "text": "From function to tool\nTo make this function available as a tool for the LLM, we need to wrap it using tool():\nget_current_weather &lt;- tool(\n  get_current_weather,\n  \"Returns the current weather for a given city\",\n  city = type_string(\n    \"The name of the city for which to get the weather\",\n    required = TRUE\n  )"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#register-tool",
-    "href": "rladies-cologne-tool-calling.html#register-tool",
+    "objectID": "index.html#register-tool",
+    "href": "index.html#register-tool",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Register tool",
     "text": "Register tool\n… and register it:\nchat$register_tool(get_current_weather)"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#other-changes",
-    "href": "rladies-cologne-tool-calling.html#other-changes",
+    "objectID": "index.html#other-changes",
+    "href": "index.html#other-changes",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Other changes",
     "text": "Other changes\nOf course we also need to update our prompt, because we want to include the city. This city should be dynamic as well, and we also want to retrieve the weather based on that city:\nYou are an assistant that performs two tasks:\n\n1. Retrieve the current weather for {{ city }}. \n   Return only the JSON results, nothing else.  \n2. Generate a list of 10 baby activities appropriate for a \n   baby that's {{ age }} months old and the current weather. \n   Each activity must include a 'fun score', estimated duration \n   in minutes, and a short description.\n\nAlways respond strictly in the JSON format defined by the \nprovided data model."
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#ready-set-go",
-    "href": "rladies-cologne-tool-calling.html#ready-set-go",
+    "objectID": "index.html#ready-set-go",
+    "href": "index.html#ready-set-go",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Ready, set, go?",
     "text": "Ready, set, go?\nBut…\n\n“Note that structured data extraction automatically disables tool calling…”\n\nSo how do we combine both?"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#two-step-process",
-    "href": "rladies-cologne-tool-calling.html#two-step-process",
+    "objectID": "index.html#two-step-process",
+    "href": "index.html#two-step-process",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Two step process",
     "text": "Two step process\n\nFirst, we call the tool to get the current weather.\nThen, we pass that weather information to the structured chat function to get the baby activities.\n\n\nSince our system prompt nicely lists these two tasks, we can let our user prompts be as simple as:\n\nchat$chat(\"Execute Task 1 (get weather)\")\nchat$chat_structured(\"Execute Task 2 (get baby activities)\", type = data_model)"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#lets-see-how-that-works",
-    "href": "rladies-cologne-tool-calling.html#lets-see-how-that-works",
+    "objectID": "index.html#lets-see-how-that-works",
+    "href": "index.html#lets-see-how-that-works",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Let’s see how that works",
     "text": "Let’s see how that works\nexamples/ellmer-tool-calling.R"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#shiny-ellmer",
-    "href": "rladies-cologne-tool-calling.html#shiny-ellmer",
+    "objectID": "index.html#shiny-ellmer",
+    "href": "index.html#shiny-ellmer",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Shiny + ellmer",
     "text": "Shiny + ellmer\nWe don’t need much to go from the R script to Shiny. Just a couple of technical changes:\n\nWe want to use chat_async() and chat_structured_async(), to make requests non-blocking.\nThose async requests need to be executed within ExtendedTask"
   },
   {
-    "objectID": "rladies-cologne-tool-calling.html#lets-take-a-look",
-    "href": "rladies-cologne-tool-calling.html#lets-take-a-look",
+    "objectID": "index.html#lets-take-a-look",
+    "href": "index.html#lets-take-a-look",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Let’s take a look",
     "text": "Let’s take a look\nexamples/ellmer-shiny.R"
