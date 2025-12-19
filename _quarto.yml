@@ -2,3 +2,5 @@ project:
   title: "When LLMs guess, tools know: tool calling in R with ellmer"
   type: website
   output-dir: docs
+execute:
+  freeze: auto
