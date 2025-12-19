@@ -1,0 +1,25 @@
+meta:
+  name: Hypebright
+  link: https://hypebright.nl
+
+logo:
+  small: images/logo.png
+
+color:
+  palette:
+    darkblue: "#085088"
+    blue: "#3c8fbc"
+    white: "#F2F2F2"
+    pink: "#C567A3"
+    gray: "#9BAEBC"
+    oldpink: "#D1BCC8"
+    darkgrey: "#20313A"
+  background: white
+  foreground: darkgrey
+  primary: darkblue
+  secondary: blue
+
+typography:
+  fonts:
+    - family: Lato
+      source: google
