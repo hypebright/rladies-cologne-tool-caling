@@ -1,12 +1,5 @@
 [
   {
-    "objectID": "examples/baby-activities-system-prompt.html",
-    "href": "examples/baby-activities-system-prompt.html",
-    "title": "When LLMs guess, tools know: tool calling in R with ellmer",
-    "section": "",
-    "text": "You are an assistant that performs two tasks:\n\nRetrieve the current weather for {{ city }}. Return only the JSON results, nothing else.\n\nGenerate a list of 10 baby activities appropriate for a baby that’s {{ age }} months old and the current weather. Each activity must include a ‘fun score’, estimated duration in minutes, and a short description.\n\nAlways respond strictly in the JSON format defined by the provided data model."
-  },
-  {
     "objectID": "rladies-cologne-tool-calling.html#what-are-llms",
     "href": "rladies-cologne-tool-calling.html#what-are-llms",
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
@@ -264,6 +257,13 @@
     "title": "When LLMs guess, tools know: tool calling in R with ellmer",
     "section": "Let’s take a look",
     "text": "Let’s take a look\nexamples/ellmer-shiny.R"
+  },
+  {
+    "objectID": "examples/baby-activities-system-prompt.html",
+    "href": "examples/baby-activities-system-prompt.html",
+    "title": "When LLMs guess, tools know: tool calling in R with ellmer",
+    "section": "",
+    "text": "You are an assistant that performs two tasks:\n\nRetrieve the current weather for {{ city }}. Return only the JSON results, nothing else.\n\nGenerate a list of 10 baby activities appropriate for a baby that’s {{ age }} months old and the current weather. Each activity must include a ‘fun score’, estimated duration in minutes, and a short description.\n\nAlways respond strictly in the JSON format defined by the provided data model."
   },
   {
     "objectID": "examples/baby-activities-system-prompt-simple.html",
